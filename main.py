@@ -3,6 +3,7 @@ import time
 import os
 from json import loads as json_loads
 from os import path as os_path, getenv
+os.environ['OPENSSL_CONF'] = os_path.join(os.getcwd(), 'openssl.cnf')
 from sys import exit as sys_exit
 from getpass import getpass
 import re
